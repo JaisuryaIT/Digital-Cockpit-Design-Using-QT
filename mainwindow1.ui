@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow1</class>
+ <widget class="QMainWindow" name="MainWindow1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>799</width>
+    <height>584</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/res/img/image1.jpg);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>50</y>
+      <width>221</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:90px;</string>
+    </property>
+    <property name="text">
+     <string>Welcome </string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="timenow">
+    <property name="geometry">
+     <rect>
+      <x>34</x>
+      <y>165</y>
+      <width>671</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>65</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:90px;</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>799</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="home"/>
+    <addaction name="separator"/>
+    <addaction name="locator"/>
+    <addaction name="separator"/>
+    <addaction name="bluetooth"/>
+    <addaction name="separator"/>
+    <addaction name="wi_fi"/>
+    <addaction name="separator"/>
+    <addaction name="settings"/>
+    <addaction name="separator"/>
+    <addaction name="help_center"/>
+    <addaction name="separator"/>
+    <addaction name="actionTheft_Detection"/>
+    <addaction name="separator"/>
+    <addaction name="actionHighway_Mode"/>
+    <addaction name="separator"/>
+    <addaction name="actionReturn"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuOptions"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="home"/>
+   <addaction name="separator"/>
+   <addaction name="locator"/>
+   <addaction name="separator"/>
+   <addaction name="bluetooth"/>
+   <addaction name="separator"/>
+   <addaction name="wi_fi"/>
+   <addaction name="separator"/>
+   <addaction name="settings"/>
+   <addaction name="separator"/>
+   <addaction name="help_center"/>
+   <addaction name="separator"/>
+   <addaction name="actionTheft_Detection"/>
+   <addaction name="separator"/>
+   <addaction name="actionHighway_Mode"/>
+   <addaction name="separator"/>
+   <addaction name="actionReturn"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="home">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/res/img/home.png</normaloff>
+     <normalon>:/res/img/home.png</normalon>
+     <activeon>:/res/img/home.png</activeon>:/res/img/home.png</iconset>
+   </property>
+   <property name="text">
+    <string>Home</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="locator">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/res/img/locator.png</normaloff>:/res/img/locator.png</iconset>
+   </property>
+   <property name="text">
+    <string>Locator</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="bluetooth">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/res/img/bluetooth.png</normaloff>:/res/img/bluetooth.png</iconset>
+   </property>
+   <property name="text">
+    <string>Bluetooth</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="wi_fi">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/res/img/wifi.png</normaloff>:/res/img/wifi.png</iconset>
+   </property>
+   <property name="text">
+    <string>Wi-Fi</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="settings">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/res/img/settings.png</normaloff>:/res/img/settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>Settings</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="help_center">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/res/img/help_center.png</normaloff>:/res/img/help_center.png</iconset>
+   </property>
+   <property name="text">
+    <string>Help Center</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionTheft_Detection">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/res/img/theft_detection.png</normaloff>:/res/img/theft_detection.png</iconset>
+   </property>
+   <property name="text">
+    <string>Theft Detection</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionHighway_Mode">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/res/img/highway_mode.png</normaloff>:/res/img/highway_mode.png</iconset>
+   </property>
+   <property name="text">
+    <string>Highway Mode</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionReturn">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/res/img/return.png</normaloff>:/res/img/return.png</iconset>
+   </property>
+   <property name="text">
+    <string>Return</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
